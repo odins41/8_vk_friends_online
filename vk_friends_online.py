@@ -1,14 +1,16 @@
 import vk
+import getpass
+
 
 APP_ID = 5708591
 
 
 def get_user_login():
-	login = input('Введите логин\n')
+	login = input('Login:')
 	return login 
 
 def get_user_password():
-	password = input('Введите пароль\n')
+	password = getpass.getpass()
 	return password
 
 
